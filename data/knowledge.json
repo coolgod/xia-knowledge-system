@@ -1,0 +1,2124 @@
+{
+  "meta": {
+    "title": "2025职业知识体系反思",
+    "familiarity": {
+      "L0": {
+        "name": "Awareness",
+        "description": "I know it exists and understand the basic idea"
+      },
+      "L1": {
+        "name": "Familiar",
+        "description": "I understand the concept and can follow along with reference material"
+      },
+      "L2": {
+        "name": "Proficient",
+        "description": "I can apply it independently, explain it clearly, and reason through problems"
+      },
+      "L3": {
+        "name": "Expert",
+        "description": "I can derive it from first principles, teach it, and handle edge cases"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "domain_mathematical_foundations",
+      "nameCn": "数学基石",
+      "nameEn": "Mathematical Foundations",
+      "type": "domain"
+    },
+    {
+      "id": "subdomain_calculus",
+      "nameCn": "微积分",
+      "nameEn": "Calculus",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_derivative",
+      "nameCn": "导数",
+      "nameEn": "Derivative",
+      "type": "concept",
+      "familiarity": "L3"
+    },
+    {
+      "id": "concept_differential",
+      "nameCn": "微分",
+      "nameEn": "Differential",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_partial_derivative",
+      "nameCn": "偏导数",
+      "nameEn": "Partial Derivative",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_chain_rule",
+      "nameCn": "复合导数（链式法则）",
+      "nameEn": "Chain Rule",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_gradient_vector",
+      "nameCn": "梯度向量",
+      "nameEn": "Gradient Vector",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_convex_concave_functions",
+      "nameCn": "凹凸函数",
+      "nameEn": "Convex / Concave Functions",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "topic_series",
+      "nameCn": "级数",
+      "nameEn": "Series",
+      "type": "topic"
+    },
+    {
+      "id": "concept_series",
+      "nameCn": "级数",
+      "nameEn": "Series",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_taylor_series",
+      "nameCn": "泰勒级数",
+      "nameEn": "Taylor Series",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_taylor_s_theorem",
+      "nameCn": "泰勒定理",
+      "nameEn": "Taylor's Theorem",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "topic_integral",
+      "nameCn": "积分",
+      "nameEn": "Integral",
+      "type": "topic"
+    },
+    {
+      "id": "concept_step_function",
+      "nameCn": "阶梯函数",
+      "nameEn": "Step Function",
+      "type": "concept"
+    },
+    {
+      "id": "concept_definite_integral",
+      "nameCn": "定积分",
+      "nameEn": "Definite Integral",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_fundamental_theorem_of_calculus",
+      "nameCn": "微积分基本定理",
+      "nameEn": "Fundamental Theorem of Calculus",
+      "type": "concept"
+    },
+    {
+      "id": "concept_indefinite_integral",
+      "nameCn": "不定积分",
+      "nameEn": "Indefinite Integral",
+      "type": "concept"
+    },
+    {
+      "id": "concept_multiple_integral",
+      "nameCn": "多重积分",
+      "nameEn": "Multiple Integral",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_linear_algebra",
+      "nameCn": "线性代数",
+      "nameEn": "Linear Algebra",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_matrix",
+      "nameCn": "矩阵",
+      "nameEn": "Matrix",
+      "keywordsEn": [
+        "Determinant",
+        "Rank"
+      ],
+      "keywordsCn": [
+        "行列式",
+        "秩"
+      ],
+      "type": "concept"
+    },
+    {
+      "id": "concept_eigenvector",
+      "nameCn": "特征向量",
+      "nameEn": "Eigenvector",
+      "type": "concept"
+    },
+    {
+      "id": "concept_orthogonality_projection",
+      "nameCn": "正交性 / 投影",
+      "nameEn": "Orthogonality / Projection",
+      "type": "concept"
+    },
+    {
+      "id": "concept_svd",
+      "nameCn": "奇异值分解",
+      "nameEn": "SVD",
+      "type": "concept"
+    },
+    {
+      "id": "concept_matrix_norm_condition_number",
+      "nameCn": "矩阵范数 / 条件数",
+      "nameEn": "Matrix Norm / Condition Number",
+      "type": "concept"
+    },
+    {
+      "id": "concept_positive_semidefiniteness",
+      "nameCn": "半正定性",
+      "nameEn": "Positive Semidefiniteness",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_probability_statistics",
+      "nameCn": "概率统计",
+      "nameEn": "Probability & Statistics",
+      "type": "subdomain"
+    },
+    {
+      "id": "topic_basic_concepts",
+      "nameCn": "基础概念",
+      "nameEn": "Basic Concepts",
+      "type": "topic"
+    },
+    {
+      "id": "concept_probability_distribution",
+      "nameCn": "概率分布",
+      "nameEn": "Probability Distribution",
+      "keywordsEn": [
+        "Discrete",
+        "Continuous",
+        "Density Function"
+      ],
+      "keywordsCn": [
+        "离散",
+        "连续",
+        "密度函数"
+      ],
+      "type": "concept"
+    },
+    {
+      "id": "concept_prior_probability",
+      "nameCn": "先验概率",
+      "nameEn": "Prior Probability",
+      "type": "concept"
+    },
+    {
+      "id": "concept_posterior_probability",
+      "nameCn": "后验概率",
+      "nameEn": "Posterior Probability",
+      "type": "concept"
+    },
+    {
+      "id": "concept_expected_value",
+      "nameCn": "期望",
+      "nameEn": "Expected Value",
+      "type": "concept"
+    },
+    {
+      "id": "concept_variance",
+      "nameCn": "方差",
+      "nameEn": "Variance",
+      "type": "concept"
+    },
+    {
+      "id": "topic_theorems",
+      "nameCn": "理论",
+      "nameEn": "Theorems",
+      "type": "topic"
+    },
+    {
+      "id": "concept_chebyshev_s_inequality",
+      "nameCn": "切比雪夫不等式",
+      "nameEn": "Chebyshev's Inequality",
+      "type": "concept"
+    },
+    {
+      "id": "concept_law_of_large_numbers",
+      "nameCn": "大数定律",
+      "nameEn": "Law of Large Numbers",
+      "type": "concept"
+    },
+    {
+      "id": "concept_central_limit_theorem",
+      "nameCn": "极限中心定理",
+      "nameEn": "Central Limit Theorem",
+      "type": "concept"
+    },
+    {
+      "id": "concept_parameter_estimation",
+      "nameCn": "参数估计",
+      "nameEn": "Parameter Estimation",
+      "keywordsEn": [
+        "MLE",
+        "Confidence Interval"
+      ],
+      "keywordsCn": [
+        "极大似然",
+        "置信区间"
+      ],
+      "type": "concept"
+    },
+    {
+      "id": "domain_advanced_mathematics",
+      "nameCn": "数学拓展",
+      "nameEn": "Advanced Mathematics",
+      "type": "domain"
+    },
+    {
+      "id": "subdomain_optimization_theory",
+      "nameCn": "优化理论",
+      "nameEn": "Optimization Theory",
+      "prerequisites": [
+        "subdomain_calculus",
+        "subdomain_linear_algebra"
+      ],
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_gradient_descent",
+      "nameCn": "梯度下降",
+      "nameEn": "Gradient Descent",
+      "type": "concept"
+    },
+    {
+      "id": "concept_convex_optimization",
+      "nameCn": "凸优化",
+      "nameEn": "Convex Optimization",
+      "type": "concept"
+    },
+    {
+      "id": "concept_constrained_optimization",
+      "nameCn": "约束优化",
+      "nameEn": "Constrained Optimization",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_information_theory",
+      "nameCn": "信息论",
+      "nameEn": "Information Theory",
+      "prerequisites": [
+        "subdomain_probability_statistics",
+        "subdomain_calculus"
+      ],
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_theoretical_basis_of_loss_functions",
+      "nameCn": "损失函数的理论来源",
+      "nameEn": "Theoretical Basis of Loss Functions",
+      "type": "concept"
+    },
+    {
+      "id": "concept_entropy",
+      "nameCn": "熵",
+      "nameEn": "Entropy",
+      "type": "concept"
+    },
+    {
+      "id": "concept_cross_entropy",
+      "nameCn": "交叉熵",
+      "nameEn": "Cross Entropy",
+      "type": "concept"
+    },
+    {
+      "id": "concept_kl_divergence",
+      "nameCn": "KL 散度",
+      "nameEn": "KL Divergence",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_probabilistic_graphical_models_stochastic_processes",
+      "nameCn": "概率图模型 & 随机过程",
+      "nameEn": "Probabilistic Graphical Models & Stochastic Processes",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_bayesian_network",
+      "nameCn": "贝叶斯网络",
+      "nameEn": "Bayesian Network",
+      "type": "concept"
+    },
+    {
+      "id": "concept_markov_chain",
+      "nameCn": "马尔可夫链",
+      "nameEn": "Markov Chain",
+      "type": "concept"
+    },
+    {
+      "id": "concept_markov_decision_process",
+      "nameCn": "马尔可夫决策过程",
+      "nameEn": "Markov Decision Process",
+      "type": "concept"
+    },
+    {
+      "id": "domain_cs_fundamentals",
+      "nameCn": "CS 基础",
+      "nameEn": "CS Fundamentals",
+      "type": "domain"
+    },
+    {
+      "id": "subdomain_operating_systems",
+      "nameCn": "操作系统",
+      "nameEn": "Operating Systems",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_kernel_mode_user_mode",
+      "nameCn": "内核态 / 用户态",
+      "nameEn": "Kernel Mode / User Mode",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_socket",
+      "nameCn": "套接字",
+      "nameEn": "Socket",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_os_i_o",
+      "nameCn": "输入输出",
+      "nameEn": "I/O",
+      "type": "concept"
+    },
+    {
+      "id": "concept_multithreading_locks",
+      "nameCn": "多线程 / 锁",
+      "nameEn": "Multithreading / Locks",
+      "type": "concept"
+    },
+    {
+      "id": "concept_semaphore",
+      "nameCn": "信号量",
+      "nameEn": "Semaphore",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "subdomain_computer_networking",
+      "nameCn": "计算机网络",
+      "nameEn": "Computer Networking",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_tcp_ip",
+      "nameCn": "TCP/IP",
+      "nameEn": "TCP/IP",
+      "type": "concept"
+    },
+    {
+      "id": "concept_simplex_duplex",
+      "nameCn": "单工 / 双工",
+      "nameEn": "Simplex / Duplex",
+      "type": "concept"
+    },
+    {
+      "id": "concept_streaming",
+      "nameCn": "流传输",
+      "nameEn": "Streaming",
+      "type": "concept"
+    },
+    {
+      "id": "concept_ssl_tls",
+      "nameCn": "安全套接层 / 传输层安全",
+      "nameEn": "SSL / TLS",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_databases",
+      "nameCn": "数据库",
+      "nameEn": "Databases",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_normal_forms",
+      "nameCn": "范式",
+      "nameEn": "Normal Forms",
+      "type": "concept"
+    },
+    {
+      "id": "concept_nosql",
+      "nameCn": "非关系型数据库",
+      "nameEn": "NoSQL",
+      "type": "concept"
+    },
+    {
+      "id": "concept_index",
+      "nameCn": "索引",
+      "nameEn": "Index",
+      "type": "concept"
+    },
+    {
+      "id": "concept_transaction",
+      "nameCn": "事务",
+      "nameEn": "Transaction",
+      "type": "concept"
+    },
+    {
+      "id": "concept_cap_vs_acid",
+      "nameCn": "CAP 与 ACID",
+      "nameEn": "CAP vs ACID",
+      "type": "concept"
+    },
+    {
+      "id": "concept_sharding",
+      "nameCn": "分片",
+      "nameEn": "Sharding",
+      "type": "concept"
+    },
+    {
+      "id": "concept_time_series_database",
+      "nameCn": "时序数据库",
+      "nameEn": "Time Series Database",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_compiler_theory",
+      "nameCn": "编译原理",
+      "nameEn": "Compiler Theory",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_context_free_grammar",
+      "nameCn": "上下文无关文法",
+      "nameEn": "Context-Free Grammar",
+      "type": "concept"
+    },
+    {
+      "id": "concept_abstract_syntax_tree",
+      "nameCn": "抽象语法树",
+      "nameEn": "Abstract Syntax Tree",
+      "type": "concept"
+    },
+    {
+      "id": "concept_ll_k_parser",
+      "nameCn": "LL(k) 解析器",
+      "nameEn": "LL(k) Parser",
+      "type": "concept"
+    },
+    {
+      "id": "concept_lr_parser",
+      "nameCn": "LR 解析器",
+      "nameEn": "LR Parser",
+      "type": "concept"
+    },
+    {
+      "id": "concept_jit_compilation",
+      "nameCn": "即时编译",
+      "nameEn": "JIT Compilation",
+      "type": "concept"
+    },
+    {
+      "id": "concept_llvm",
+      "nameCn": "LLVM",
+      "nameEn": "LLVM",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_computer_architecture",
+      "nameCn": "计算机架构",
+      "nameEn": "Computer Architecture",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_instruction_set_architecture",
+      "nameCn": "指令集架构",
+      "nameEn": "Instruction Set Architecture",
+      "type": "concept"
+    },
+    {
+      "id": "concept_cpu_clock",
+      "nameCn": "CPU 时钟",
+      "nameEn": "CPU Clock",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_distributed_computing",
+      "nameCn": "分布式计算",
+      "nameEn": "Distributed Computing",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_paxos",
+      "nameCn": "Paxos",
+      "nameEn": "Paxos",
+      "type": "concept"
+    },
+    {
+      "id": "concept_raft",
+      "nameCn": "Raft",
+      "nameEn": "Raft",
+      "type": "concept"
+    },
+    {
+      "id": "concept_two_phase_commit",
+      "nameCn": "两阶段提交",
+      "nameEn": "Two-Phase Commit",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_three_phase_commit",
+      "nameCn": "三阶段提交",
+      "nameEn": "Three-Phase Commit",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "domain_programming_languages",
+      "nameCn": "编程语言",
+      "nameEn": "Programming Languages",
+      "type": "domain"
+    },
+    {
+      "id": "subdomain_pl_functional_programming",
+      "nameCn": "函数式编程",
+      "nameEn": "Functional Programming",
+      "type": "subdomain"
+    },
+    {
+      "id": "topic_haskell",
+      "nameCn": "Haskell",
+      "nameEn": "Haskell",
+      "type": "topic"
+    },
+    {
+      "id": "concept_functor",
+      "nameCn": "函子",
+      "nameEn": "Functor",
+      "type": "concept"
+    },
+    {
+      "id": "concept_applicative",
+      "nameCn": "应用函子",
+      "nameEn": "Applicative",
+      "type": "concept"
+    },
+    {
+      "id": "concept_monad",
+      "nameCn": "单子",
+      "nameEn": "Monad",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_c_cpp",
+      "nameCn": "C / C++",
+      "nameEn": "C / C++",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_pointer",
+      "nameCn": "指针",
+      "nameEn": "Pointer",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_virtual_function",
+      "nameCn": "虚函数",
+      "nameEn": "Virtual Function",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_template",
+      "nameCn": "模版",
+      "nameEn": "Template",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "subdomain_java",
+      "nameCn": "Java",
+      "nameEn": "Java",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_java_i_o",
+      "nameCn": "输入输出",
+      "nameEn": "I/O",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_rtti",
+      "nameCn": "运行时类型识别",
+      "nameEn": "RTTI",
+      "type": "concept"
+    },
+    {
+      "id": "concept_annotation",
+      "nameCn": "注解",
+      "nameEn": "Annotation",
+      "type": "concept"
+    },
+    {
+      "id": "concept_inner_class",
+      "nameCn": "内部类",
+      "nameEn": "Inner Class",
+      "type": "concept",
+      "familiarity": "L3"
+    },
+    {
+      "id": "concept_enum",
+      "nameCn": "枚举",
+      "nameEn": "Enum",
+      "type": "concept",
+      "familiarity": "L3"
+    },
+    {
+      "id": "concept_java_generics",
+      "nameCn": "泛型",
+      "nameEn": "Generics",
+      "type": "concept"
+    },
+    {
+      "id": "concept_concurrency",
+      "nameCn": "并发",
+      "nameEn": "Concurrency",
+      "type": "concept"
+    },
+    {
+      "id": "concept_lambda",
+      "nameCn": "Lambda 表达式",
+      "nameEn": "Lambda",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "subdomain_javascript_typescript_nodejs",
+      "nameCn": "JavaScript / TypeScript / Node.js",
+      "nameEn": "JavaScript / TypeScript / Node.js",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_event_loop",
+      "nameCn": "事件循环",
+      "nameEn": "Event Loop",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_javascript_generics",
+      "nameCn": "泛型",
+      "nameEn": "Generics",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_weakmap_weakset",
+      "nameCn": "弱引用映射 / 弱引用集合",
+      "nameEn": "WeakMap / WeakSet",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_iterator",
+      "nameCn": "迭代器",
+      "nameEn": "Iterator",
+      "type": "concept",
+      "familiarity": "L3"
+    },
+    {
+      "id": "concept_generator",
+      "nameCn": "生成器",
+      "nameEn": "Generator",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_proxy",
+      "nameCn": "代理",
+      "nameEn": "Proxy",
+      "type": "concept"
+    },
+    {
+      "id": "concept_decorator",
+      "nameCn": "装饰器",
+      "nameEn": "Decorator",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_python",
+      "nameCn": "Python",
+      "nameEn": "Python",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_modules_pip",
+      "nameCn": "模块 / pip 包管理",
+      "nameEn": "Modules / pip",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_new_languages_to_learn",
+      "nameCn": "新学语言",
+      "nameEn": "New Languages to Learn",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_rust",
+      "nameCn": "Rust",
+      "nameEn": "Rust",
+      "type": "concept"
+    },
+    {
+      "id": "concept_erlang",
+      "nameCn": "Erlang",
+      "nameEn": "Erlang",
+      "type": "concept"
+    },
+    {
+      "id": "concept_go",
+      "nameCn": "Go",
+      "nameEn": "Go",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "subdomain_pl_miscellaneous",
+      "nameCn": "杂项",
+      "nameEn": "Miscellaneous",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_tail_recursion",
+      "nameCn": "尾递归",
+      "nameEn": "Tail Recursion",
+      "type": "concept"
+    },
+    {
+      "id": "concept_parser_combinator",
+      "nameCn": "解析器组合子",
+      "nameEn": "Parser Combinator",
+      "type": "concept"
+    },
+    {
+      "id": "concept_regex",
+      "nameCn": "正则表达式",
+      "nameEn": "Regex",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_design_pattern",
+      "nameCn": "设计模式",
+      "nameEn": "Design Pattern",
+      "type": "concept"
+    },
+    {
+      "id": "domain_frontend_development",
+      "nameCn": "前端开发",
+      "nameEn": "Frontend Development",
+      "type": "domain"
+    },
+    {
+      "id": "subdomain_web_api",
+      "nameCn": "Web API",
+      "nameEn": "Web API",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_drag_and_drop",
+      "nameCn": "拖拽",
+      "nameEn": "Drag and Drop",
+      "type": "concept"
+    },
+    {
+      "id": "concept_web_component",
+      "nameCn": "Web 组件",
+      "nameEn": "Web Component",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_webgl",
+      "nameCn": "WebGL",
+      "nameEn": "WebGL",
+      "type": "concept"
+    },
+    {
+      "id": "concept_rendering_performance",
+      "nameCn": "渲染性能",
+      "nameEn": "Rendering Performance",
+      "type": "concept"
+    },
+    {
+      "id": "concept_animation",
+      "nameCn": "动画",
+      "nameEn": "Animation",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_symbol",
+      "nameCn": "Symbol",
+      "nameEn": "Symbol",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_es_module",
+      "nameCn": "ES 模块",
+      "nameEn": "ES Module",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_web_worker",
+      "nameCn": "Web Worker",
+      "nameEn": "Web Worker",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "subdomain_frameworks_tools",
+      "nameCn": "框架 / 工具",
+      "nameEn": "Frameworks / Tools",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_react",
+      "nameCn": "React",
+      "nameEn": "React",
+      "type": "concept",
+      "familiarity": "L3"
+    },
+    {
+      "id": "concept_vue",
+      "nameCn": "Vue",
+      "nameEn": "Vue",
+      "type": "concept"
+    },
+    {
+      "id": "concept_svelte",
+      "nameCn": "Svelte",
+      "nameEn": "Svelte",
+      "type": "concept"
+    },
+    {
+      "id": "concept_vite_esbuild",
+      "nameCn": "Vite / Esbuild",
+      "nameEn": "Vite / Esbuild",
+      "type": "concept"
+    },
+    {
+      "id": "concept_nextjs",
+      "nameCn": "Next.js",
+      "nameEn": "Next.js",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_electron",
+      "nameCn": "Electron",
+      "nameEn": "Electron",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_patterns",
+      "nameCn": "设计模式",
+      "nameEn": "Patterns",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_mvc_vs_mvvm",
+      "nameCn": "MVC 与 MVVM",
+      "nameEn": "MVC vs MVVM",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "subdomain_fd_functional_programming",
+      "nameCn": "函数式编程",
+      "nameEn": "Functional Programming",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_rxjs",
+      "nameCn": "RxJS",
+      "nameEn": "RxJS",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "subdomain_css",
+      "nameCn": "CSS",
+      "nameEn": "CSS",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_css_grid",
+      "nameCn": "Grid 布局",
+      "nameEn": "CSS Grid",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_atomic_css_tailwind_css",
+      "nameCn": "原子化 CSS / Tailwind CSS",
+      "nameEn": "Atomic CSS / Tailwind CSS",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "subdomain_fd_miscellaneous",
+      "nameCn": "杂项",
+      "nameEn": "Miscellaneous",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_webassembly",
+      "nameCn": "WebAssembly",
+      "nameEn": "WebAssembly",
+      "type": "concept"
+    },
+    {
+      "id": "concept_web_accessibility",
+      "nameCn": "Web 可访问性",
+      "nameEn": "Web Accessibility",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_oauth",
+      "nameCn": "开放授权",
+      "nameEn": "OAuth",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_graphql",
+      "nameCn": "GraphQL",
+      "nameEn": "GraphQL",
+      "type": "concept"
+    },
+    {
+      "id": "concept_node_stream",
+      "nameCn": "Node 流",
+      "nameEn": "Node Stream",
+      "type": "concept"
+    },
+    {
+      "id": "concept_viewport",
+      "nameCn": "视口",
+      "nameEn": "Viewport",
+      "type": "concept"
+    },
+    {
+      "id": "domain_backend_development",
+      "nameCn": "后端开发",
+      "nameEn": "Backend Development",
+      "type": "domain"
+    },
+    {
+      "id": "subdomain_infrastructure",
+      "nameCn": "基础设施",
+      "nameEn": "Infrastructure",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_docker",
+      "nameCn": "Docker",
+      "nameEn": "Docker",
+      "type": "concept"
+    },
+    {
+      "id": "concept_kubernetes",
+      "nameCn": "Kubernetes",
+      "nameEn": "Kubernetes",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_frameworks_libraries",
+      "nameCn": "框架 / 类库",
+      "nameEn": "Frameworks / Libraries",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_thrift_avro_protobuf",
+      "nameCn": "Thrift / Avro / Protobuf",
+      "nameEn": "Thrift / Avro / Protobuf",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_spring",
+      "nameCn": "Spring",
+      "nameEn": "Spring",
+      "type": "concept"
+    },
+    {
+      "id": "concept_redis",
+      "nameCn": "Redis",
+      "nameEn": "Redis",
+      "type": "concept"
+    },
+    {
+      "id": "concept_solr_elasticsearch",
+      "nameCn": "Solr / Elasticsearch",
+      "nameEn": "Solr / Elasticsearch",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_kafka",
+      "nameCn": "Kafka",
+      "nameEn": "Kafka",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "subdomain_tools",
+      "nameCn": "工具",
+      "nameEn": "Tools",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_gradle_groovy",
+      "nameCn": "Gradle / Groovy",
+      "nameEn": "Gradle / Groovy",
+      "type": "concept"
+    },
+    {
+      "id": "subdomain_bd_miscellaneous",
+      "nameCn": "杂项",
+      "nameEn": "Miscellaneous",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_shell_scripting",
+      "nameCn": "Shell 脚本",
+      "nameEn": "Shell Scripting",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_caching",
+      "nameCn": "缓存",
+      "nameEn": "Caching",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_serverless",
+      "nameCn": "无服务器架构",
+      "nameEn": "Serverless",
+      "type": "concept"
+    },
+    {
+      "id": "concept_service_mesh",
+      "nameCn": "服务网格",
+      "nameEn": "Service Mesh",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_grpc",
+      "nameCn": "gRPC",
+      "nameEn": "gRPC",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_trpc",
+      "nameCn": "tRPC",
+      "nameEn": "tRPC",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_inverted_index",
+      "nameCn": "倒排索引",
+      "nameEn": "Inverted Index",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_mapreduce",
+      "nameCn": "MapReduce",
+      "nameEn": "MapReduce",
+      "type": "concept",
+      "familiarity": "L2"
+    },
+    {
+      "id": "concept_spark",
+      "nameCn": "Spark",
+      "nameEn": "Spark",
+      "type": "concept"
+    },
+    {
+      "id": "domain_ai_ml",
+      "nameCn": "人工智能 / 机器学习",
+      "nameEn": "AI / ML",
+      "type": "domain"
+    },
+    {
+      "id": "subdomain_math_foundations",
+      "nameCn": "数学基础",
+      "nameEn": "Math Foundations",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_ml_fundamentals",
+      "nameCn": "机器学习基础",
+      "nameEn": "ML Fundamentals",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_deep_learning",
+      "nameCn": "深度学习",
+      "nameEn": "Deep Learning",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_time_series_analysis",
+      "nameCn": "时序分析",
+      "nameEn": "Time-Series Analysis",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_ensemble_methods",
+      "nameCn": "集成学习方法",
+      "nameEn": "Ensemble Methods",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_nlp",
+      "nameCn": "自然语言处理",
+      "nameEn": "NLP",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_computer_vision",
+      "nameCn": "计算机视觉",
+      "nameEn": "Computer Vision",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_reinforcement_learning",
+      "nameCn": "强化学习",
+      "nameEn": "Reinforcement Learning",
+      "type": "subdomain"
+    }
+  ],
+  "edges": [
+    {
+      "from": "domain_mathematical_foundations",
+      "to": "subdomain_calculus",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "concept_derivative",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "concept_differential",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "concept_partial_derivative",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "concept_chain_rule",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "concept_gradient_vector",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "concept_convex_concave_functions",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "topic_series",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_series",
+      "to": "concept_series",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_series",
+      "to": "concept_taylor_series",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_series",
+      "to": "concept_taylor_s_theorem",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "topic_integral",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_integral",
+      "to": "concept_step_function",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_integral",
+      "to": "concept_definite_integral",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_integral",
+      "to": "concept_fundamental_theorem_of_calculus",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_integral",
+      "to": "concept_indefinite_integral",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_integral",
+      "to": "concept_multiple_integral",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_mathematical_foundations",
+      "to": "subdomain_linear_algebra",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_linear_algebra",
+      "to": "concept_matrix",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_linear_algebra",
+      "to": "concept_eigenvector",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_linear_algebra",
+      "to": "concept_orthogonality_projection",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_linear_algebra",
+      "to": "concept_svd",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_linear_algebra",
+      "to": "concept_matrix_norm_condition_number",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_linear_algebra",
+      "to": "concept_positive_semidefiniteness",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_mathematical_foundations",
+      "to": "subdomain_probability_statistics",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_probability_statistics",
+      "to": "topic_basic_concepts",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_basic_concepts",
+      "to": "concept_probability_distribution",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_basic_concepts",
+      "to": "concept_prior_probability",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_basic_concepts",
+      "to": "concept_posterior_probability",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_basic_concepts",
+      "to": "concept_expected_value",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_basic_concepts",
+      "to": "concept_variance",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_probability_statistics",
+      "to": "topic_theorems",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_theorems",
+      "to": "concept_chebyshev_s_inequality",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_theorems",
+      "to": "concept_law_of_large_numbers",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_theorems",
+      "to": "concept_central_limit_theorem",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_theorems",
+      "to": "concept_parameter_estimation",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_advanced_mathematics",
+      "to": "subdomain_optimization_theory",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_optimization_theory",
+      "to": "concept_gradient_descent",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_optimization_theory",
+      "to": "concept_convex_optimization",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_optimization_theory",
+      "to": "concept_constrained_optimization",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_advanced_mathematics",
+      "to": "subdomain_information_theory",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_information_theory",
+      "to": "concept_theoretical_basis_of_loss_functions",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_information_theory",
+      "to": "concept_entropy",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_information_theory",
+      "to": "concept_cross_entropy",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_information_theory",
+      "to": "concept_kl_divergence",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_advanced_mathematics",
+      "to": "subdomain_probabilistic_graphical_models_stochastic_processes",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_probabilistic_graphical_models_stochastic_processes",
+      "to": "concept_bayesian_network",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_probabilistic_graphical_models_stochastic_processes",
+      "to": "concept_markov_chain",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_probabilistic_graphical_models_stochastic_processes",
+      "to": "concept_markov_decision_process",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_cs_fundamentals",
+      "to": "subdomain_operating_systems",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_operating_systems",
+      "to": "concept_kernel_mode_user_mode",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_operating_systems",
+      "to": "concept_socket",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_operating_systems",
+      "to": "concept_os_i_o",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_operating_systems",
+      "to": "concept_multithreading_locks",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_operating_systems",
+      "to": "concept_semaphore",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_cs_fundamentals",
+      "to": "subdomain_computer_networking",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_computer_networking",
+      "to": "concept_tcp_ip",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_computer_networking",
+      "to": "concept_simplex_duplex",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_computer_networking",
+      "to": "concept_streaming",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_computer_networking",
+      "to": "concept_ssl_tls",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_cs_fundamentals",
+      "to": "subdomain_databases",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_normal_forms",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_nosql",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_index",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_transaction",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_cap_vs_acid",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_sharding",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_time_series_database",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_cs_fundamentals",
+      "to": "subdomain_compiler_theory",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_compiler_theory",
+      "to": "concept_context_free_grammar",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_compiler_theory",
+      "to": "concept_abstract_syntax_tree",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_compiler_theory",
+      "to": "concept_ll_k_parser",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_compiler_theory",
+      "to": "concept_lr_parser",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_compiler_theory",
+      "to": "concept_jit_compilation",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_compiler_theory",
+      "to": "concept_llvm",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_cs_fundamentals",
+      "to": "subdomain_computer_architecture",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_computer_architecture",
+      "to": "concept_instruction_set_architecture",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_computer_architecture",
+      "to": "concept_cpu_clock",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_cs_fundamentals",
+      "to": "subdomain_distributed_computing",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_distributed_computing",
+      "to": "concept_paxos",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_distributed_computing",
+      "to": "concept_raft",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_distributed_computing",
+      "to": "concept_two_phase_commit",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_distributed_computing",
+      "to": "concept_three_phase_commit",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_programming_languages",
+      "to": "subdomain_pl_functional_programming",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_pl_functional_programming",
+      "to": "topic_haskell",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_haskell",
+      "to": "concept_functor",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_haskell",
+      "to": "concept_applicative",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_haskell",
+      "to": "concept_monad",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_programming_languages",
+      "to": "subdomain_c_cpp",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_c_cpp",
+      "to": "concept_pointer",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_c_cpp",
+      "to": "concept_virtual_function",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_c_cpp",
+      "to": "concept_template",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_programming_languages",
+      "to": "subdomain_java",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_java",
+      "to": "concept_java_i_o",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_java",
+      "to": "concept_rtti",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_java",
+      "to": "concept_annotation",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_java",
+      "to": "concept_inner_class",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_java",
+      "to": "concept_enum",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_java",
+      "to": "concept_java_generics",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_java",
+      "to": "concept_concurrency",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_java",
+      "to": "concept_lambda",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_programming_languages",
+      "to": "subdomain_javascript_typescript_nodejs",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_javascript_typescript_nodejs",
+      "to": "concept_event_loop",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_javascript_typescript_nodejs",
+      "to": "concept_javascript_generics",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_javascript_typescript_nodejs",
+      "to": "concept_weakmap_weakset",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_javascript_typescript_nodejs",
+      "to": "concept_iterator",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_javascript_typescript_nodejs",
+      "to": "concept_generator",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_javascript_typescript_nodejs",
+      "to": "concept_proxy",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_javascript_typescript_nodejs",
+      "to": "concept_decorator",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_programming_languages",
+      "to": "subdomain_python",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_python",
+      "to": "concept_modules_pip",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_programming_languages",
+      "to": "subdomain_new_languages_to_learn",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_new_languages_to_learn",
+      "to": "concept_rust",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_new_languages_to_learn",
+      "to": "concept_erlang",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_new_languages_to_learn",
+      "to": "concept_go",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_programming_languages",
+      "to": "subdomain_pl_miscellaneous",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_pl_miscellaneous",
+      "to": "concept_tail_recursion",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_pl_miscellaneous",
+      "to": "concept_parser_combinator",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_pl_miscellaneous",
+      "to": "concept_regex",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_pl_miscellaneous",
+      "to": "concept_design_pattern",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_frontend_development",
+      "to": "subdomain_web_api",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_web_api",
+      "to": "concept_drag_and_drop",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_web_api",
+      "to": "concept_web_component",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_web_api",
+      "to": "concept_webgl",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_web_api",
+      "to": "concept_rendering_performance",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_web_api",
+      "to": "concept_animation",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_web_api",
+      "to": "concept_symbol",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_web_api",
+      "to": "concept_es_module",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_web_api",
+      "to": "concept_web_worker",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_frontend_development",
+      "to": "subdomain_frameworks_tools",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_tools",
+      "to": "concept_react",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_tools",
+      "to": "concept_vue",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_tools",
+      "to": "concept_svelte",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_tools",
+      "to": "concept_vite_esbuild",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_tools",
+      "to": "concept_nextjs",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_tools",
+      "to": "concept_electron",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_frontend_development",
+      "to": "subdomain_patterns",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_patterns",
+      "to": "concept_mvc_vs_mvvm",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_frontend_development",
+      "to": "subdomain_fd_functional_programming",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_fd_functional_programming",
+      "to": "concept_rxjs",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_frontend_development",
+      "to": "subdomain_css",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_css",
+      "to": "concept_css_grid",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_css",
+      "to": "concept_atomic_css_tailwind_css",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_frontend_development",
+      "to": "subdomain_fd_miscellaneous",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_fd_miscellaneous",
+      "to": "concept_webassembly",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_fd_miscellaneous",
+      "to": "concept_web_accessibility",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_fd_miscellaneous",
+      "to": "concept_oauth",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_fd_miscellaneous",
+      "to": "concept_graphql",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_fd_miscellaneous",
+      "to": "concept_node_stream",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_fd_miscellaneous",
+      "to": "concept_viewport",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_backend_development",
+      "to": "subdomain_infrastructure",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_infrastructure",
+      "to": "concept_docker",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_infrastructure",
+      "to": "concept_kubernetes",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_backend_development",
+      "to": "subdomain_frameworks_libraries",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_libraries",
+      "to": "concept_thrift_avro_protobuf",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_libraries",
+      "to": "concept_spring",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_libraries",
+      "to": "concept_redis",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_libraries",
+      "to": "concept_solr_elasticsearch",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_frameworks_libraries",
+      "to": "concept_kafka",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_backend_development",
+      "to": "subdomain_tools",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_tools",
+      "to": "concept_gradle_groovy",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_backend_development",
+      "to": "subdomain_bd_miscellaneous",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_shell_scripting",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_caching",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_serverless",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_service_mesh",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_grpc",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_trpc",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_inverted_index",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_mapreduce",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_bd_miscellaneous",
+      "to": "concept_spark",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_ai_ml",
+      "to": "subdomain_math_foundations",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_ai_ml",
+      "to": "subdomain_ml_fundamentals",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_ai_ml",
+      "to": "subdomain_deep_learning",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_ai_ml",
+      "to": "subdomain_time_series_analysis",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_ai_ml",
+      "to": "subdomain_ensemble_methods",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_ai_ml",
+      "to": "subdomain_nlp",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_ai_ml",
+      "to": "subdomain_computer_vision",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_ai_ml",
+      "to": "subdomain_reinforcement_learning",
+      "relation": "contains"
+    }
+  ]
+}

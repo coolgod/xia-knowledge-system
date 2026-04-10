@@ -14,6 +14,7 @@ import { LangContext, type Lang } from './context';
 import { buildMindMap } from './mindmap';
 import { nodeTypes } from './GNode';
 import { NavTree } from './NavTree';
+import { ListView } from './ListView';
 
 const data = knowledge as KnowledgeData;
 const tree = buildTree(data);
@@ -22,10 +23,9 @@ const totalConcepts = data.nodes.filter(isConcept).length;
 
 export default function App() {
   const [lang, setLang] = useState<Lang>('en');
+  const [mode, setMode] = useState<'graph' | 'list'>('graph');
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(tree[0]?.node.id ?? null);
-  const [expandedIds, setExpandedIds] = useState<Set<string>>(
-    () => new Set(tree[0] ? [tree[0].node.id] : []),
-  );
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(() => new Set());
 
   const selectedTree = findTreeNode(tree, selectedNodeId) ?? tree[0] ?? null;
   const selectedNode = selectedTree?.node ?? null;
@@ -45,45 +45,39 @@ export default function App() {
 
   return (
     <LangContext.Provider value={lang}>
-      <div className="max-w-[1440px] mx-auto px-5 pt-8 pb-10">
+      <div className="h-svh flex flex-col max-w-[1440px] mx-auto px-5 pt-8 pb-6">
 
         {/* Header */}
-        <header className="flex justify-between items-start mb-6">
-          <div>
-            <p className="m-0 mb-2 text-[#7a5e2e] text-[0.78rem] tracking-[0.14em] uppercase">
-              Iteration 2
-            </p>
-            <h1 className="hero-title">{data.meta?.title ?? 'Xia Knowledge System'}</h1>
+        <header className="flex justify-between items-center mb-6 shrink-0">
+          <div className="flex items-baseline gap-5">
+            <h1 className="m-0 text-[1.8rem] font-semibold tracking-tight">Xia Knowledge System</h1>
+            <span className="text-[#6a748b] text-sm">
+              {tree.length} domains · {totalConcepts} leaf nodes
+              {validationErrors.length > 0 && ` · ${validationErrors.length} issues`}
+            </span>
           </div>
-          <button
-            className="mt-1 px-2.5 py-1 border border-slate-900/[0.15] rounded-full bg-white text-[#2f405a] text-[0.8rem] hover:bg-[#f1ecdf] transition-colors"
-            onClick={() => setLang((l) => (l === 'en' ? 'cn' : 'en'))}
-            type="button"
-          >
-            {lang === 'en' ? '中文' : 'EN'}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              className="px-2.5 py-1 border border-slate-900/[0.15] rounded-[5px] bg-white text-[#2f405a] text-[0.8rem] hover:bg-[#f1ecdf] transition-colors"
+              onClick={() => setMode(m => m === 'graph' ? 'list' : 'graph')}
+              type="button"
+            >
+              {mode === 'graph' ? 'List' : 'Graph'}
+            </button>
+            <button
+              className="px-2.5 py-1 border border-slate-900/[0.15] rounded-[5px] bg-white text-[#2f405a] text-[0.8rem] hover:bg-[#f1ecdf] transition-colors"
+              onClick={() => setLang((l) => (l === 'en' ? 'cn' : 'en'))}
+              type="button"
+            >
+              {lang === 'en' ? '中文' : 'EN'}
+            </button>
+          </div>
         </header>
 
-        {/* Summary cards */}
-        <section className="grid grid-cols-4 max-[1080px]:grid-cols-1 gap-3 mb-[18px]">
-          {[
-            { label: 'Domains', value: tree.length },
-            { label: 'Nodes', value: data.nodes.length },
-            { label: 'Concepts', value: totalConcepts },
-            {
-              label: 'Validation',
-              value: validationErrors.length === 0 ? 'Clean' : `${validationErrors.length} issues`,
-            },
-          ].map(({ label, value }) => (
-            <div key={label} className="card p-4">
-              <span className="text-[#6a748b] text-sm">{label}</span>
-              <strong className="block mt-1 text-[1.6rem]">{value}</strong>
-            </div>
-          ))}
-        </section>
-
-        {/* Main viewer */}
-        <main className="grid grid-cols-[320px_1fr] max-[1080px]:grid-cols-1 gap-4 items-start">
+        {mode === 'list' ? (
+          <ListView tree={tree} />
+        ) : (
+        <main className="grid grid-cols-[320px_1fr] max-[1080px]:grid-cols-1 gap-4 items-start flex-1 min-h-0">
 
           {/* Sidebar */}
           <aside className="card self-start p-5 min-w-0 overflow-hidden">
@@ -102,10 +96,10 @@ export default function App() {
           </aside>
 
           {/* Content */}
-          <section className="grid gap-4">
+          <section className="grid gap-4 h-full">
 
             {/* Graph panel */}
-            <section className="card flex flex-col p-5">
+            <section className="card flex flex-col p-5 min-h-0">
               <div className="flex justify-between items-baseline gap-4 mb-4">
                 <div>
                   <h2 className="m-0 text-[1.05rem]">Graph</h2>
@@ -116,7 +110,7 @@ export default function App() {
                   </p>
                 </div>
               </div>
-              <div className="flex-1 h-[calc(100vh-320px)] min-h-[480px] rounded-xl overflow-hidden">
+              <div className="flex-1 min-h-0 rounded-[5px] overflow-hidden">
                 {selectedTree ? (
                   <ReactFlow
                     key={selectedNode?.id}
@@ -133,7 +127,7 @@ export default function App() {
                     proOptions={{ hideAttribution: true }}
                   >
                     <Background gap={20} size={1} color="#e0ddd6" />
-                    <Controls />
+                    <Controls showInteractive={false} />
                   </ReactFlow>
                 ) : (
                   <p className="m-0 text-slate-400">No node selected.</p>
@@ -160,6 +154,7 @@ export default function App() {
 
           </section>
         </main>
+        )}
       </div>
     </LangContext.Provider>
   );

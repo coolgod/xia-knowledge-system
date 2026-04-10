@@ -8,6 +8,8 @@ type BaseNode = {
   nameEn: string;
   prerequisites?: string[];
   familiarity?: FamiliarityLevel;
+  keywordsEn?: string[];
+  keywordsCn?: string[];
 };
 
 export type StructuredNode = BaseNode & {
@@ -16,8 +18,6 @@ export type StructuredNode = BaseNode & {
 
 export type ConceptNode = BaseNode & {
   type: 'concept';
-  keywordsEn?: string[];
-  keywordsCn?: string[];
 };
 
 export type KnowledgeNode = StructuredNode | ConceptNode;
@@ -119,6 +119,20 @@ export function collectSubtreeNodes(item: TreeNode): KnowledgeNode[] {
 
 export function countConcepts(item: TreeNode): number {
   return collectSubtreeNodes(item).filter(isConcept).length;
+}
+
+export function countLeafNodes(item: TreeNode): number {
+  if (item.children.length === 0) return 1;
+  return item.children.reduce((sum, child) => sum + countLeafNodes(child), 0);
+}
+
+export function countLeafNodesWithFamiliarity(item: TreeNode): number {
+  if (item.children.length === 0) return item.node.familiarity != null ? 1 : 0;
+  return item.children.reduce((sum, child) => sum + countLeafNodesWithFamiliarity(child), 0);
+}
+
+export function countConceptsWithFamiliarity(item: TreeNode): number {
+  return collectSubtreeNodes(item).filter((n) => isConcept(n) && n.familiarity != null).length;
 }
 
 export function getPath(data: KnowledgeData, nodeId: string): KnowledgeNode[] {

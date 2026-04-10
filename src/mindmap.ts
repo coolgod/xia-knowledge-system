@@ -3,11 +3,11 @@ import { countConcepts } from './knowledge';
 import type { KnowledgeNode, TreeNode } from './knowledge';
 
 export const NODE_W = 200;
-export const NODE_H = 88;
-export const H_GAP = 60;
-export const V_GAP = 20;
+export const NODE_H = 80;
+export const H_GAP = 100;
+export const V_GAP = 10;
 
-export type GNodeData = { node: KnowledgeNode; conceptCount: number };
+export type GNodeData = { node: KnowledgeNode; conceptCount: number; isLeaf: boolean };
 
 type Direction = 'right' | 'left';
 
@@ -34,7 +34,7 @@ function placeBranch(
     id: item.node.id,
     type: item.node.type,
     position: { x: nodeX, y: centerY - NODE_H / 2 },
-    data: { node: item.node, conceptCount: countConcepts(item) },
+    data: { node: item.node, conceptCount: countConcepts(item), isLeaf: item.children.length === 0 },
     style: { width: NODE_W },
   });
 

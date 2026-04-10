@@ -34,46 +34,52 @@
       "type": "subdomain"
     },
     {
+      "id": "topic_calculus_basic_concepts",
+      "nameCn": "基础概念",
+      "nameEn": "Basic Concepts",
+      "type": "topic"
+    },
+    {
       "id": "concept_derivative",
       "nameCn": "导数",
       "nameEn": "Derivative",
       "type": "concept",
-      "familiarity": "L3"
+      "familiarity": "L2"
     },
     {
       "id": "concept_differential",
       "nameCn": "微分",
       "nameEn": "Differential",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_partial_derivative",
       "nameCn": "偏导数",
       "nameEn": "Partial Derivative",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_chain_rule",
       "nameCn": "复合导数（链式法则）",
       "nameEn": "Chain Rule",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_gradient_vector",
       "nameCn": "梯度向量",
       "nameEn": "Gradient Vector",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_convex_concave_functions",
       "nameCn": "凹凸函数",
       "nameEn": "Convex / Concave Functions",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "topic_series",
@@ -86,21 +92,21 @@
       "nameCn": "级数",
       "nameEn": "Series",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_taylor_series",
       "nameCn": "泰勒级数",
       "nameEn": "Taylor Series",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_taylor_s_theorem",
       "nameCn": "泰勒定理",
       "nameEn": "Taylor's Theorem",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "topic_integral",
@@ -119,7 +125,7 @@
       "nameCn": "定积分",
       "nameEn": "Definite Integral",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_fundamental_theorem_of_calculus",
@@ -388,14 +394,14 @@
       "nameCn": "内核态 / 用户态",
       "nameEn": "Kernel Mode / User Mode",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_socket",
       "nameCn": "套接字",
       "nameEn": "Socket",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_os_i_o",
@@ -413,6 +419,13 @@
       "id": "concept_semaphore",
       "nameCn": "信号量",
       "nameEn": "Semaphore",
+      "type": "concept",
+      "familiarity": "L0"
+    },
+    {
+      "id": "concept_shell_programming",
+      "nameCn": "Shell 编程",
+      "nameEn": "Shell Programming",
       "type": "concept",
       "familiarity": "L1"
     },
@@ -577,14 +590,14 @@
       "nameCn": "两阶段提交",
       "nameEn": "Two-Phase Commit",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_three_phase_commit",
       "nameCn": "三阶段提交",
       "nameEn": "Three-Phase Commit",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "domain_programming_languages",
@@ -602,25 +615,17 @@
       "id": "topic_haskell",
       "nameCn": "Haskell",
       "nameEn": "Haskell",
-      "type": "topic"
-    },
-    {
-      "id": "concept_functor",
-      "nameCn": "函子",
-      "nameEn": "Functor",
-      "type": "concept"
-    },
-    {
-      "id": "concept_applicative",
-      "nameCn": "应用函子",
-      "nameEn": "Applicative",
-      "type": "concept"
-    },
-    {
-      "id": "concept_monad",
-      "nameCn": "单子",
-      "nameEn": "Monad",
-      "type": "concept"
+      "type": "topic",
+      "keywordsEn": [
+        "Functor",
+        "Applicative",
+        "Monad"
+      ],
+      "keywordsCn": [
+        "函子",
+        "应用函子",
+        "单子"
+      ]
     },
     {
       "id": "subdomain_c_cpp",
@@ -633,21 +638,21 @@
       "nameCn": "指针",
       "nameEn": "Pointer",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_virtual_function",
       "nameCn": "虚函数",
       "nameEn": "Virtual Function",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_template",
       "nameCn": "模版",
       "nameEn": "Template",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "subdomain_java",
@@ -660,7 +665,7 @@
       "nameCn": "输入输出",
       "nameEn": "I/O",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_rtti",
@@ -679,14 +684,14 @@
       "nameCn": "内部类",
       "nameEn": "Inner Class",
       "type": "concept",
-      "familiarity": "L3"
+      "familiarity": "L2"
     },
     {
       "id": "concept_enum",
       "nameCn": "枚举",
       "nameEn": "Enum",
       "type": "concept",
-      "familiarity": "L3"
+      "familiarity": "L2"
     },
     {
       "id": "concept_java_generics",
@@ -705,7 +710,7 @@
       "nameCn": "Lambda 表达式",
       "nameEn": "Lambda",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "subdomain_javascript_typescript_nodejs",
@@ -718,41 +723,42 @@
       "nameCn": "事件循环",
       "nameEn": "Event Loop",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_javascript_generics",
       "nameCn": "泛型",
       "nameEn": "Generics",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_weakmap_weakset",
       "nameCn": "弱引用映射 / 弱引用集合",
       "nameEn": "WeakMap / WeakSet",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_iterator",
       "nameCn": "迭代器",
       "nameEn": "Iterator",
       "type": "concept",
-      "familiarity": "L3"
+      "familiarity": "L2"
     },
     {
       "id": "concept_generator",
       "nameCn": "生成器",
       "nameEn": "Generator",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_proxy",
       "nameCn": "代理",
       "nameEn": "Proxy",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "concept_decorator",
@@ -770,7 +776,8 @@
       "id": "concept_modules_pip",
       "nameCn": "模块 / pip 包管理",
       "nameEn": "Modules / pip",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L2"
     },
     {
       "id": "subdomain_new_languages_to_learn",
@@ -795,7 +802,7 @@
       "nameCn": "Go",
       "nameEn": "Go",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "subdomain_pl_miscellaneous",
@@ -820,7 +827,7 @@
       "nameCn": "正则表达式",
       "nameEn": "Regex",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_design_pattern",
@@ -851,7 +858,7 @@
       "nameCn": "Web 组件",
       "nameEn": "Web Component",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_webgl",
@@ -870,28 +877,28 @@
       "nameCn": "动画",
       "nameEn": "Animation",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_symbol",
       "nameCn": "Symbol",
       "nameEn": "Symbol",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_es_module",
       "nameCn": "ES 模块",
       "nameEn": "ES Module",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_web_worker",
       "nameCn": "Web Worker",
       "nameEn": "Web Worker",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "subdomain_frameworks_tools",
@@ -904,7 +911,7 @@
       "nameCn": "React",
       "nameEn": "React",
       "type": "concept",
-      "familiarity": "L3"
+      "familiarity": "L2"
     },
     {
       "id": "concept_vue",
@@ -929,7 +936,7 @@
       "nameCn": "Next.js",
       "nameEn": "Next.js",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_electron",
@@ -948,7 +955,7 @@
       "nameCn": "MVC 与 MVVM",
       "nameEn": "MVC vs MVVM",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "subdomain_fd_functional_programming",
@@ -961,7 +968,7 @@
       "nameCn": "RxJS",
       "nameEn": "RxJS",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "subdomain_css",
@@ -974,14 +981,14 @@
       "nameCn": "Grid 布局",
       "nameEn": "CSS Grid",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_atomic_css_tailwind_css",
       "nameCn": "原子化 CSS / Tailwind CSS",
       "nameEn": "Atomic CSS / Tailwind CSS",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "subdomain_fd_miscellaneous",
@@ -1000,20 +1007,21 @@
       "nameCn": "Web 可访问性",
       "nameEn": "Web Accessibility",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_oauth",
       "nameCn": "开放授权",
       "nameEn": "OAuth",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_graphql",
       "nameCn": "GraphQL",
       "nameEn": "GraphQL",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "concept_node_stream",
@@ -1043,7 +1051,8 @@
       "id": "concept_docker",
       "nameCn": "Docker",
       "nameEn": "Docker",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "concept_kubernetes",
@@ -1062,13 +1071,14 @@
       "nameCn": "Thrift / Avro / Protobuf",
       "nameEn": "Thrift / Avro / Protobuf",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_spring",
       "nameCn": "Spring",
       "nameEn": "Spring",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "concept_redis",
@@ -1081,14 +1091,14 @@
       "nameCn": "Solr / Elasticsearch",
       "nameEn": "Solr / Elasticsearch",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_kafka",
       "nameCn": "Kafka",
       "nameEn": "Kafka",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "subdomain_tools",
@@ -1113,14 +1123,14 @@
       "nameCn": "Shell 脚本",
       "nameEn": "Shell Scripting",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_caching",
       "nameCn": "缓存",
       "nameEn": "Caching",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_serverless",
@@ -1133,35 +1143,35 @@
       "nameCn": "服务网格",
       "nameEn": "Service Mesh",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_grpc",
       "nameCn": "gRPC",
       "nameEn": "gRPC",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_trpc",
       "nameCn": "tRPC",
       "nameEn": "tRPC",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_inverted_index",
       "nameCn": "倒排索引",
       "nameEn": "Inverted Index",
       "type": "concept",
-      "familiarity": "L1"
+      "familiarity": "L0"
     },
     {
       "id": "concept_mapreduce",
       "nameCn": "MapReduce",
       "nameEn": "MapReduce",
       "type": "concept",
-      "familiarity": "L2"
+      "familiarity": "L1"
     },
     {
       "id": "concept_spark",
@@ -1231,32 +1241,32 @@
       "relation": "contains"
     },
     {
-      "from": "subdomain_calculus",
+      "from": "topic_calculus_basic_concepts",
       "to": "concept_derivative",
       "relation": "contains"
     },
     {
-      "from": "subdomain_calculus",
+      "from": "topic_calculus_basic_concepts",
       "to": "concept_differential",
       "relation": "contains"
     },
     {
-      "from": "subdomain_calculus",
+      "from": "topic_calculus_basic_concepts",
       "to": "concept_partial_derivative",
       "relation": "contains"
     },
     {
-      "from": "subdomain_calculus",
+      "from": "topic_calculus_basic_concepts",
       "to": "concept_chain_rule",
       "relation": "contains"
     },
     {
-      "from": "subdomain_calculus",
+      "from": "topic_calculus_basic_concepts",
       "to": "concept_gradient_vector",
       "relation": "contains"
     },
     {
-      "from": "subdomain_calculus",
+      "from": "topic_calculus_basic_concepts",
       "to": "concept_convex_concave_functions",
       "relation": "contains"
     },
@@ -1501,6 +1511,11 @@
       "relation": "contains"
     },
     {
+      "from": "subdomain_operating_systems",
+      "to": "concept_shell_programming",
+      "relation": "contains"
+    },
+    {
       "from": "domain_cs_fundamentals",
       "to": "subdomain_computer_networking",
       "relation": "contains"
@@ -1648,21 +1663,6 @@
     {
       "from": "subdomain_pl_functional_programming",
       "to": "topic_haskell",
-      "relation": "contains"
-    },
-    {
-      "from": "topic_haskell",
-      "to": "concept_functor",
-      "relation": "contains"
-    },
-    {
-      "from": "topic_haskell",
-      "to": "concept_applicative",
-      "relation": "contains"
-    },
-    {
-      "from": "topic_haskell",
-      "to": "concept_monad",
       "relation": "contains"
     },
     {
@@ -2118,6 +2118,11 @@
     {
       "from": "domain_ai_ml",
       "to": "subdomain_reinforcement_learning",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_calculus",
+      "to": "topic_calculus_basic_concepts",
       "relation": "contains"
     }
   ]

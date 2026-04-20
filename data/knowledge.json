@@ -559,7 +559,8 @@
       "id": "concept_instruction_set_architecture",
       "nameCn": "指令集架构",
       "nameEn": "Instruction Set Architecture",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "concept_cpu_clock",

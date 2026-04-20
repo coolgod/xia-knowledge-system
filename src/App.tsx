@@ -15,6 +15,7 @@ import { buildMindMap } from './mindmap';
 import { nodeTypes } from './GNode';
 import { NavTree } from './NavTree';
 import { ListView } from './ListView';
+import { FamiliarityLegend } from './CheckBadge';
 
 const data = knowledge as KnowledgeData;
 const tree = buildTree(data);
@@ -100,7 +101,7 @@ export default function App() {
 
             {/* Graph panel */}
             <section className="card flex flex-col p-5 min-h-0">
-              <div className="flex justify-between items-baseline gap-4 mb-4">
+              <div className="flex justify-between items-start gap-4 mb-4">
                 <div>
                   <h2 className="m-0 text-[1.05rem]">Graph</h2>
                   <p className="mt-1.5 text-[#6a748b] text-sm">
@@ -109,6 +110,7 @@ export default function App() {
                       : 'Select a node.'}
                   </p>
                 </div>
+                <FamiliarityLegend />
               </div>
               <div className="flex-1 min-h-0 rounded-[5px] overflow-hidden">
                 {selectedTree ? (

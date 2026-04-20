@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import { LangContext } from './context';
 import { ExpandIcon } from './ExpandIcon';
 import { isConcept } from './knowledge';
-import { familiarityColors } from './CheckBadge';
+import { familiarityColors, FamiliarityLegend } from './CheckBadge';
 import type { TreeNode } from './knowledge';
 
 function nodeName(item: TreeNode, lang: 'en' | 'cn'): string {
@@ -95,6 +95,9 @@ type ListViewProps = {
 export function ListView({ tree }: ListViewProps) {
   return (
     <div className="card p-5 overflow-y-auto">
+      <div className="flex justify-end mb-3">
+        <FamiliarityLegend />
+      </div>
       <ul className="m-0 p-0 grid gap-1">
         {tree.map(item => (
           <ListItem key={item.node.id} item={item} depth={0} />

@@ -1,8 +1,9 @@
 import { useContext } from 'react';
-import { LangContext } from './context';
+import { LangContext } from '../context';
+import { countLeafNodes, countLeafNodesWithFamiliarity } from '../data/tree';
 import { ExpandIcon } from './ExpandIcon';
-import { countLeafNodes, countLeafNodesWithFamiliarity } from './knowledge';
-import type { TreeNode } from './knowledge';
+
+import type { TreeNode } from '../data/types';
 
 type NavTreeProps = {
   items: TreeNode[];

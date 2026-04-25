@@ -1,5 +1,6 @@
 import { createContext, useContext } from 'react';
-import type { KnowledgeNode } from './knowledge';
+
+import type { KnowledgeNode } from './data/types';
 
 export type Lang = 'en' | 'cn';
 

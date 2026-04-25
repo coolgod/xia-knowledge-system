@@ -1,21 +1,13 @@
 import { useState } from 'react';
-import { ReactFlow, Background, Controls } from '@xyflow/react';
-import '@xyflow/react/dist/style.css';
 import knowledge from '../data/knowledge.json';
-import {
-  buildTree,
-  collectSubtreeNodes,
-  findTreeNode,
-  isConcept,
-  validateKnowledge,
-  type KnowledgeData,
-} from './knowledge';
-import { LangContext, type Lang } from './context';
-import { buildMindMap } from './mindmap';
-import { nodeTypes } from './GNode';
-import { NavTree } from './NavTree';
-import { ListView } from './ListView';
-import { FamiliarityLegend } from './CheckBadge';
+import { GraphView } from './components/GraphView';
+import { ListView } from './components/ListView';
+import { NavTree } from './components/NavTree';
+import { type Lang,LangContext } from './context';
+import { buildTree, findTreeNode, isConcept } from './data/tree';
+import { validateKnowledge } from './data/validate';
+
+import type { KnowledgeData } from './data/types';
 
 const data = knowledge as KnowledgeData;
 const tree = buildTree(data);
@@ -30,10 +22,6 @@ export default function App() {
 
   const selectedTree = findTreeNode(tree, selectedNodeId) ?? tree[0] ?? null;
   const selectedNode = selectedTree?.node ?? null;
-  const selectedSubtreeNodes = selectedTree ? collectSubtreeNodes(selectedTree) : [];
-  const { nodes: rfNodes, edges: rfEdges } = selectedTree
-    ? buildMindMap(selectedTree)
-    : { nodes: [], edges: [] };
 
   function handleToggle(id: string) {
     setExpandedIds((prev) => {
@@ -98,45 +86,10 @@ export default function App() {
 
           {/* Content */}
           <section className="grid gap-4 h-full">
-
-            {/* Graph panel */}
-            <section className="card flex flex-col p-5 min-h-0">
-              <div className="flex justify-between items-start gap-4 mb-4">
-                <div>
-                  <h2 className="m-0 text-[1.05rem]">Graph</h2>
-                  <p className="mt-1.5 text-[#6a748b] text-sm">
-                    {selectedNode
-                      ? `${lang === 'en' ? selectedNode.nameEn : selectedNode.nameCn} — ${selectedSubtreeNodes.length} nodes`
-                      : 'Select a node.'}
-                  </p>
-                </div>
-                <FamiliarityLegend />
-              </div>
-              <div className="flex-1 min-h-0 rounded-[5px] overflow-hidden">
-                {selectedTree ? (
-                  <ReactFlow
-                    key={selectedNode?.id}
-                    nodes={rfNodes}
-                    edges={rfEdges}
-                    nodeTypes={nodeTypes}
-                    fitView
-                    fitViewOptions={{ padding: 0.2 }}
-                    minZoom={0.1}
-                    maxZoom={2}
-                    nodesDraggable={false}
-                    nodesConnectable={false}
-                    onNodeClick={(_, node) => setSelectedNodeId(node.id)}
-                    proOptions={{ hideAttribution: true }}
-                  >
-                    <Background gap={20} size={1} color="#e0ddd6" />
-                    <Controls showInteractive={false} />
-                  </ReactFlow>
-                ) : (
-                  <p className="m-0 text-slate-400">No node selected.</p>
-                )}
-              </div>
-            </section>
-
+            <GraphView
+              selectedTree={selectedTree}
+              onNodeClick={setSelectedNodeId}
+            />
 
             {/* Validation errors */}
             {validationErrors.length > 0 ? (

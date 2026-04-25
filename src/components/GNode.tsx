@@ -1,9 +1,10 @@
-import { useContext } from 'react';
 import { Handle, Position } from '@xyflow/react';
-import type { NodeTypes } from '@xyflow/react';
-import { LangContext, useName } from './context';
-import type { GNodeData } from './mindmap';
+import { useContext } from 'react';
+import { LangContext, useName } from '../context';
 import { CheckBadge } from './CheckBadge';
+
+import type { GNodeData } from '../mindmap/types';
+import type { NodeTypes } from '@xyflow/react';
 
 export function GNode({ data: { node, isLeaf } }: { data: GNodeData }) {
   const lang = useContext(LangContext);

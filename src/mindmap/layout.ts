@@ -1,13 +1,8 @@
-import type { Node as RFNode, Edge as RFEdge } from '@xyflow/react';
-import { countConcepts } from './knowledge';
-import type { KnowledgeNode, TreeNode } from './knowledge';
+import { countConcepts } from '../data/tree';
+import { H_GAP, NODE_H, NODE_W, V_GAP } from './constants';
 
-export const NODE_W = 200;
-export const NODE_H = 80;
-export const H_GAP = 100;
-export const V_GAP = 10;
-
-export type GNodeData = { node: KnowledgeNode; conceptCount: number; isLeaf: boolean };
+import type { TreeNode } from '../data/types';
+import type { Edge as RFEdge,Node as RFNode } from '@xyflow/react';
 
 type Direction = 'right' | 'left';
 

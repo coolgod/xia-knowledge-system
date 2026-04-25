@@ -1,9 +1,11 @@
-import { useState, useContext } from 'react';
-import { LangContext } from './context';
+import { useContext,useState } from 'react';
+import { LangContext } from '../context';
+import { isConcept } from '../data/tree';
+import { familiarityColors } from './CheckBadge';
 import { ExpandIcon } from './ExpandIcon';
-import { isConcept } from './knowledge';
-import { familiarityColors, FamiliarityLegend } from './CheckBadge';
-import type { TreeNode } from './knowledge';
+import { FamiliarityLegend } from './FamiliarityLegend';
+
+import type { TreeNode } from '../data/types';
 
 function nodeName(item: TreeNode, lang: 'en' | 'cn'): string {
   const name = lang === 'en' ? item.node.nameEn : item.node.nameCn;

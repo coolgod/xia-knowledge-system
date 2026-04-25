@@ -2,6 +2,8 @@
 
 A personal knowledge graph visualizer — a bilingual (EN/中文) mind map of career knowledge. The primary artifact is `data/knowledge.json`; the UI is a viewer for it.
 
+![screenshot](docs/screenshot.png)
+
 ## Local dev
 
 ```bash

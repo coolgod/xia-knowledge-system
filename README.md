@@ -1,13 +1,9 @@
 # Xia Knowledge System
 
-Local-first knowledge viewer built with React, TypeScript, Vite, and Mermaid.
+Local-first knowledge viewer built with React, TypeScript, and Vite.
 
 ```bash
-npm run convert:raw
 npm run dev
-```
-
-```bash
 npm run build
 ```
 

@@ -469,31 +469,54 @@
       "id": "concept_normal_forms",
       "nameCn": "范式",
       "nameEn": "Normal Forms",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "concept_nosql",
       "nameCn": "非关系型数据库",
       "nameEn": "NoSQL",
-      "type": "concept"
+      "keywordsEn": [
+        "Column-Based Database",
+        "Graph Database",
+        "Document Database",
+        "Key-Value Store"
+      ],
+      "keywordsCn": [
+        "列式数据库",
+        "图数据库",
+        "文档数据库",
+        "键值存储"
+      ],
+      "type": "concept",
+      "familiarity": "L1"
     },
     {
       "id": "concept_index",
       "nameCn": "索引",
       "nameEn": "Index",
-      "type": "concept"
+      "keywordsEn": [
+        "B+ Tree"
+      ],
+      "keywordsCn": [
+        "B+ 树"
+      ],
+      "type": "concept",
+      "familiarity": "L1"
     },
     {
       "id": "concept_transaction",
       "nameCn": "事务",
       "nameEn": "Transaction",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "concept_cap_vs_acid",
       "nameCn": "CAP 与 ACID",
       "nameEn": "CAP vs ACID",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "concept_sharding",
@@ -506,6 +529,32 @@
       "nameCn": "时序数据库",
       "nameEn": "Time Series Database",
       "type": "concept"
+    },
+    {
+      "id": "concept_olap",
+      "nameCn": "联机分析处理",
+      "nameEn": "OLAP",
+      "type": "concept",
+      "familiarity": "L0"
+    },
+    {
+      "id": "concept_storage",
+      "nameCn": "存储",
+      "nameEn": "Storage",
+      "keywordsEn": [
+        "Row-Oriented",
+        "Column-Oriented",
+        "SSTable",
+        "LSM Tree"
+      ],
+      "keywordsCn": [
+        "行存储",
+        "列存储",
+        "SSTable",
+        "LSM 树"
+      ],
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "subdomain_compiler_theory",
@@ -1579,6 +1628,16 @@
     {
       "from": "subdomain_databases",
       "to": "concept_time_series_database",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_olap",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_databases",
+      "to": "concept_storage",
       "relation": "contains"
     },
     {

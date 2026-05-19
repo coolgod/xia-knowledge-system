@@ -1108,12 +1108,13 @@
       "id": "concept_kubernetes",
       "nameCn": "Kubernetes",
       "nameEn": "Kubernetes",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
-      "id": "subdomain_frameworks_libraries",
-      "nameCn": "框架 / 类库",
-      "nameEn": "Frameworks / Libraries",
+      "id": "subdomain_application_framework",
+      "nameCn": "应用框架",
+      "nameEn": "Application Framework",
       "type": "subdomain"
     },
     {
@@ -1131,15 +1132,30 @@
       "familiarity": "L0"
     },
     {
+      "id": "concept_guice",
+      "nameCn": "Guice",
+      "nameEn": "Guice",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
       "id": "concept_redis",
       "nameCn": "Redis",
       "nameEn": "Redis",
       "type": "concept"
     },
     {
-      "id": "concept_solr_elasticsearch",
-      "nameCn": "Solr / Elasticsearch",
-      "nameEn": "Solr / Elasticsearch",
+      "id": "concept_solr",
+      "nameCn": "Solr",
+      "nameEn": "Solr",
+      "keywordsEn": [
+        "Elasticsearch",
+        "OpenSearch"
+      ],
+      "keywordsCn": [
+        "Elasticsearch",
+        "OpenSearch"
+      ],
       "type": "concept",
       "familiarity": "L1"
     },
@@ -1151,16 +1167,60 @@
       "familiarity": "L1"
     },
     {
-      "id": "subdomain_tools",
+      "id": "subdomain_tooling",
       "nameCn": "工具",
-      "nameEn": "Tools",
+      "nameEn": "Tooling",
       "type": "subdomain"
     },
     {
       "id": "concept_gradle_groovy",
       "nameCn": "Gradle / Groovy",
       "nameEn": "Gradle / Groovy",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
+    },
+    {
+      "id": "subdomain_inter_service_communication",
+      "nameCn": "服务间通信",
+      "nameEn": "Inter-Service Communication",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_data_processing",
+      "nameCn": "数据处理",
+      "nameEn": "Data Processing",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_search_indexing",
+      "nameCn": "搜索 / 索引",
+      "nameEn": "Search / Indexing",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_messaging_event_streaming",
+      "nameCn": "消息 / 事件流",
+      "nameEn": "Messaging / Event Streaming",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_workflow_orchestration",
+      "nameCn": "工作流编排",
+      "nameEn": "Workflow Orchestration",
+      "type": "subdomain"
+    },
+    {
+      "id": "subdomain_caching",
+      "nameCn": "缓存",
+      "nameEn": "Caching",
+      "type": "subdomain"
+    },
+    {
+      "id": "concept_uber_cadence_temporal",
+      "nameCn": "Uber Cadence / Temporal",
+      "nameEn": "Uber Cadence / Temporal",
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "subdomain_bd_miscellaneous",
@@ -1176,9 +1236,9 @@
       "familiarity": "L1"
     },
     {
-      "id": "concept_caching",
-      "nameCn": "缓存",
-      "nameEn": "Caching",
+      "id": "concept_cache_patterns",
+      "nameCn": "缓存模式",
+      "nameEn": "Cache Patterns",
       "type": "concept",
       "familiarity": "L1"
     },
@@ -1220,6 +1280,14 @@
       "id": "concept_mapreduce",
       "nameCn": "MapReduce",
       "nameEn": "MapReduce",
+      "keywordsEn": [
+        "Hadoop",
+        "HDFS"
+      ],
+      "keywordsCn": [
+        "Hadoop",
+        "HDFS"
+      ],
       "type": "concept",
       "familiarity": "L1"
     },
@@ -1227,7 +1295,8 @@
       "id": "concept_spark",
       "nameCn": "Spark",
       "nameEn": "Spark",
-      "type": "concept"
+      "type": "concept",
+      "familiarity": "L0"
     },
     {
       "id": "domain_ai_ml",
@@ -2052,42 +2121,52 @@
     },
     {
       "from": "domain_backend_development",
-      "to": "subdomain_frameworks_libraries",
+      "to": "subdomain_application_framework",
       "relation": "contains"
     },
     {
-      "from": "subdomain_frameworks_libraries",
-      "to": "concept_thrift_avro_protobuf",
-      "relation": "contains"
-    },
-    {
-      "from": "subdomain_frameworks_libraries",
+      "from": "subdomain_application_framework",
       "to": "concept_spring",
       "relation": "contains"
     },
     {
-      "from": "subdomain_frameworks_libraries",
-      "to": "concept_redis",
+      "from": "subdomain_application_framework",
+      "to": "concept_guice",
       "relation": "contains"
     },
     {
-      "from": "subdomain_frameworks_libraries",
-      "to": "concept_solr_elasticsearch",
+      "from": "domain_backend_development",
+      "to": "subdomain_messaging_event_streaming",
       "relation": "contains"
     },
     {
-      "from": "subdomain_frameworks_libraries",
+      "from": "subdomain_messaging_event_streaming",
       "to": "concept_kafka",
       "relation": "contains"
     },
     {
       "from": "domain_backend_development",
-      "to": "subdomain_tools",
+      "to": "subdomain_workflow_orchestration",
       "relation": "contains"
     },
     {
-      "from": "subdomain_tools",
+      "from": "subdomain_workflow_orchestration",
+      "to": "concept_uber_cadence_temporal",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_backend_development",
+      "to": "subdomain_tooling",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_tooling",
       "to": "concept_gradle_groovy",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_tooling",
+      "to": "concept_shell_scripting",
       "relation": "contains"
     },
     {
@@ -2096,13 +2175,18 @@
       "relation": "contains"
     },
     {
-      "from": "subdomain_bd_miscellaneous",
-      "to": "concept_shell_scripting",
+      "from": "domain_backend_development",
+      "to": "subdomain_caching",
       "relation": "contains"
     },
     {
-      "from": "subdomain_bd_miscellaneous",
-      "to": "concept_caching",
+      "from": "subdomain_caching",
+      "to": "concept_redis",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_caching",
+      "to": "concept_cache_patterns",
       "relation": "contains"
     },
     {
@@ -2111,32 +2195,57 @@
       "relation": "contains"
     },
     {
-      "from": "subdomain_bd_miscellaneous",
+      "from": "subdomain_infrastructure",
       "to": "concept_service_mesh",
       "relation": "contains"
     },
     {
-      "from": "subdomain_bd_miscellaneous",
+      "from": "domain_backend_development",
+      "to": "subdomain_inter_service_communication",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_inter_service_communication",
       "to": "concept_grpc",
       "relation": "contains"
     },
     {
-      "from": "subdomain_bd_miscellaneous",
+      "from": "subdomain_inter_service_communication",
       "to": "concept_trpc",
       "relation": "contains"
     },
     {
-      "from": "subdomain_bd_miscellaneous",
+      "from": "subdomain_inter_service_communication",
+      "to": "concept_thrift_avro_protobuf",
+      "relation": "contains"
+    },
+    {
+      "from": "domain_backend_development",
+      "to": "subdomain_search_indexing",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_search_indexing",
+      "to": "concept_solr",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_search_indexing",
       "to": "concept_inverted_index",
       "relation": "contains"
     },
     {
-      "from": "subdomain_bd_miscellaneous",
+      "from": "domain_backend_development",
+      "to": "subdomain_data_processing",
+      "relation": "contains"
+    },
+    {
+      "from": "subdomain_data_processing",
       "to": "concept_mapreduce",
       "relation": "contains"
     },
     {
-      "from": "subdomain_bd_miscellaneous",
+      "from": "subdomain_data_processing",
       "to": "concept_spark",
       "relation": "contains"
     },

@@ -175,15 +175,13 @@
       "id": "concept_rank",
       "nameCn": "秩",
       "nameEn": "Rank",
-      "type": "concept",
-      "familiarity": "L0"
+      "type": "concept"
     },
     {
       "id": "concept_determinant",
       "nameCn": "行列式",
       "nameEn": "Determinant",
-      "type": "concept",
-      "familiarity": "L0"
+      "type": "concept"
     },
     {
       "id": "concept_transpose",

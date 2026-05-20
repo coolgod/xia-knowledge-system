@@ -152,24 +152,76 @@
       "type": "subdomain"
     },
     {
-      "id": "concept_matrix",
-      "nameCn": "矩阵",
-      "nameEn": "Matrix",
-      "keywordsEn": [
-        "Determinant",
-        "Rank"
-      ],
-      "keywordsCn": [
-        "行列式",
-        "秩"
-      ],
+      "id": "topic_la_foundations",
+      "nameCn": "基础",
+      "nameEn": "Foundations",
+      "type": "topic"
+    },
+    {
+      "id": "concept_vectors",
+      "nameCn": "向量",
+      "nameEn": "Vectors",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_matrix_basics",
+      "nameCn": "矩阵基础",
+      "nameEn": "Matrix Basics",
+      "type": "concept",
+      "familiarity": "L1"
+    },
+    {
+      "id": "concept_rank",
+      "nameCn": "秩",
+      "nameEn": "Rank",
+      "type": "concept",
+      "familiarity": "L0"
+    },
+    {
+      "id": "concept_determinant",
+      "nameCn": "行列式",
+      "nameEn": "Determinant",
+      "type": "concept",
+      "familiarity": "L0"
+    },
+    {
+      "id": "concept_transpose",
+      "nameCn": "转置",
+      "nameEn": "Transpose",
+      "type": "concept",
+      "familiarity": "L0"
+    },
+    {
+      "id": "concept_inverse",
+      "nameCn": "逆矩阵",
+      "nameEn": "Inverse",
+      "type": "concept",
+      "familiarity": "L0"
+    },
+    {
+      "id": "topic_la_decompositions",
+      "nameCn": "分解",
+      "nameEn": "Decompositions",
+      "type": "topic"
+    },
+    {
+      "id": "concept_eigenvalues_eigenvectors",
+      "nameCn": "特征值 / 特征向量",
+      "nameEn": "Eigenvalues / Eigenvectors",
       "type": "concept"
     },
     {
-      "id": "concept_eigenvector",
-      "nameCn": "特征向量",
-      "nameEn": "Eigenvector",
+      "id": "concept_svd",
+      "nameCn": "奇异值分解",
+      "nameEn": "SVD (Singular Value Decomposition)",
       "type": "concept"
+    },
+    {
+      "id": "topic_la_geometry_metrics",
+      "nameCn": "几何与度量",
+      "nameEn": "Geometry & Metrics",
+      "type": "topic"
     },
     {
       "id": "concept_orthogonality_projection",
@@ -178,15 +230,9 @@
       "type": "concept"
     },
     {
-      "id": "concept_svd",
-      "nameCn": "奇异值分解",
-      "nameEn": "SVD",
-      "type": "concept"
-    },
-    {
-      "id": "concept_matrix_norm_condition_number",
-      "nameCn": "矩阵范数 / 条件数",
-      "nameEn": "Matrix Norm / Condition Number",
+      "id": "concept_norms_condition_number",
+      "nameCn": "范数 / 条件数",
+      "nameEn": "Norms / Condition Number",
       "type": "concept"
     },
     {
@@ -1446,31 +1492,71 @@
     },
     {
       "from": "subdomain_linear_algebra",
-      "to": "concept_matrix",
+      "to": "topic_la_foundations",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_la_foundations",
+      "to": "concept_vectors",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_la_foundations",
+      "to": "concept_matrix_basics",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_la_foundations",
+      "to": "concept_rank",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_la_foundations",
+      "to": "concept_determinant",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_la_foundations",
+      "to": "concept_transpose",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_la_foundations",
+      "to": "concept_inverse",
       "relation": "contains"
     },
     {
       "from": "subdomain_linear_algebra",
-      "to": "concept_eigenvector",
+      "to": "topic_la_decompositions",
       "relation": "contains"
     },
     {
-      "from": "subdomain_linear_algebra",
-      "to": "concept_orthogonality_projection",
+      "from": "topic_la_decompositions",
+      "to": "concept_eigenvalues_eigenvectors",
       "relation": "contains"
     },
     {
-      "from": "subdomain_linear_algebra",
+      "from": "topic_la_decompositions",
       "to": "concept_svd",
       "relation": "contains"
     },
     {
       "from": "subdomain_linear_algebra",
-      "to": "concept_matrix_norm_condition_number",
+      "to": "topic_la_geometry_metrics",
       "relation": "contains"
     },
     {
-      "from": "subdomain_linear_algebra",
+      "from": "topic_la_geometry_metrics",
+      "to": "concept_orthogonality_projection",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_la_geometry_metrics",
+      "to": "concept_norms_condition_number",
+      "relation": "contains"
+    },
+    {
+      "from": "topic_la_geometry_metrics",
       "to": "concept_positive_semidefiniteness",
       "relation": "contains"
     },
